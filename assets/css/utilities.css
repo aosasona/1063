@@ -1,0 +1,21 @@
+/* These are reusable CSS classes to avoiding the main classes from getting bulky (mostly for trivial non-repetitive elements) */
+
+.text-bg {
+  color: var(--bg-color);
+}
+
+.text-2xl {
+  font-size: var(--scale-8);
+}
+
+.mt-6 {
+  margin-top: var(--scale-6);
+}
+
+.my-8 {
+  margin: var(--scale-8) 0;
+}
+
+.hidden {
+  display: none;
+}

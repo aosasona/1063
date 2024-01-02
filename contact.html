@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Software Engineer" name="description" />
+    <meta content="software,engineer" name="keywords" />
+    <meta content="website" property="og:type" />
+    <meta content="YourName" property="og:title" />
+    <meta content="assets/images/me.jpg" property="og:image" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!--  FontAwesome from a CDN  -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script defer src="assets/js/main.js"></script>
+
+    <title>Contact</title>
+</head>
+
+<body class="main-body">
+    <nav class="site-nav">
+        <div class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="workexperience.html">Work experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-nav-top">
+            <a href="/">
+                <h2 class="text-2xl">YourName</h2>
+            </a>
+
+            <button class="hamburger-menu" onclick="openNav()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workexperience.html">Work experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <button onclick="closeNav()" class="close-mobile-nav">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container contact-page">
+        <p>Got something interesting to discuss with me? Fill in the form below to reach out to me via email :)</p>
+        <form class="contact-form" id="contact-form" method="get" onsubmit="handleContactForm(event)">
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" placeholder="Work with you on..." required type="text" />
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Hello YourName, I..." required rows="10"></textarea>
+            </div>
+            <button disabled id="contact-form-btn" type="submit">Continue</button>
+        </form>
+
+        <p>Need to find me somewhere else?</p>
+        <div class="socials">
+            <a href="https://yourwebsite.tld" target="_blank" title="My Blog"><i class="fa-solid fa-link"></i></a>
+            <a href="https://twitter.com/Username" target="_blank" title="Find me on Twitter"><i
+                    class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/Username" target="_blank" title="Connect on LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Username" target="_blank" title="Things I work on"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="date"></span> YourName
+    </footer>
+</body>
+
+</html>
